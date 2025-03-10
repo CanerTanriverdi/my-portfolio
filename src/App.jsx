@@ -1,10 +1,33 @@
-import "./App.css";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+import "./styles/App.css";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <div>
+          Mainlayout - --- <Outlet />
+        </div>
+      ),
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+          index: true,
+        },
+        {
+          path: "about",
+          element: <div>About</div>,
+        },
+      ],
+    },
+  ]);
   return (
-    <>
-      <h1 className="text-3xl w-screen text-primary-600 h-screen bg-slate-700 font-bold underline">Hello world!</h1>{" "}
-    </>
+    <RouterProvider router={router}>
+      <App />
+    </RouterProvider>
   );
 }
 
