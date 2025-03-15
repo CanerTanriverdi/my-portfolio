@@ -3,7 +3,7 @@ import logo from "../assets/icons/logo.svg";
 
 export default function Header() {
   return (
-    <header className="bg-transparent flex justify-around h-32 items-center w-screen fixed z-20">
+    <header className="flex hover:bg-black/20 justify-around h-28 items-center w-screen fixed z-20 duration-300">
       <div>
         <img
           src={logo}
@@ -11,7 +11,7 @@ export default function Header() {
         />
       </div>
       <nav>
-        <ul className="flex space-x-12 font-bold">
+        <ul className="flex space-x-10 font-bold ">
           <li>
             <a
               href="#"
@@ -39,7 +39,7 @@ export default function Header() {
           <li>
             <a
               href="#"
-              className="  text-primary hover:text-secondary border-2 border-secondary px-6 py-2 rounded-full bg-secondary hover:bg-accent transition duration-300"
+              className="  text-primary hover:text-secondary border-2 border-secondary px-5 py-2 rounded-full bg-secondary hover:bg-accent transition duration-300"
             >
               CONTACT ME
             </a>

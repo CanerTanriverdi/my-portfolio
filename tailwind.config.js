@@ -10,6 +10,9 @@ export default {
         background: "#D7D7D7", // Genel arka plan rengi
         text: "#2C2A2F", // Genel metin rengi
       },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"], // Montserrat fontunu ekledik
+      },
     },
   },
   plugins: [],
