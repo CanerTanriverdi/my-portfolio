@@ -3,6 +3,13 @@ import arrow from "../assets/icons/arrow.svg";
 import linkedin from "../assets/icons/linkedin.svg";
 import instagram from "../assets/icons/instagram.svg";
 import mail from "../assets/icons/mail.svg";
+import SocialLinks from "./SocialLinks";
+
+const footerLinks = [
+  { id: "linkedin", url: "https://www.linkedin.com/", icon: linkedin },
+  { id: "instagram", url: "https://www.instagram.com/", icon: instagram },
+  { id: "mail", url: "mailto:canertanriverdiis@gmail.com", icon: mail },
+];
 
 export default function Footer() {
   return (
@@ -17,37 +24,12 @@ export default function Footer() {
         />
         <p className="text-white font-bold text-[9px]">BACK TO TOP</p>
       </div>
-      <div className="flex space-x-5">
-        <a
-          href="https://www.linkedin.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={linkedin}
-            alt="linkedin"
-            className="w-6 h-6 cursor-pointer"
-          />
-        </a>
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src={instagram}
-            alt="instagram"
-            className="w-6 h-6 cursor-pointer"
-          />
-        </a>
-        <a href="mailto:canertanriverdiis@gmail.com">
-          <img
-            src={mail}
-            alt="mail"
-            className="w-6 h-6 cursor-pointer"
-          />
-        </a>
-      </div>
+      <SocialLinks
+        links={footerLinks}
+        containerClass="flex space-x-5"
+        iconClass="w-6 h-6 cursor-pointer"
+      />
+
       <div className="text-white font-bold text-xs">@2025 Caner Tanrıverdi All Rights Reserved.</div>
     </div>
   );
