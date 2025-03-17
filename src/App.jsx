@@ -13,10 +13,6 @@ function App() {
           index: true,
           element: <Home />,
         },
-        {
-          path: "about",
-          element: <div>About</div>,
-        },
       ],
     },
   ]);

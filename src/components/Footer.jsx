@@ -13,7 +13,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <div className="bg-primary flex flex-col justify-center items-center space-y-5 py-5">
+    <div className="bg-primary flex flex-col justify-center items-center space-y-5 py-10">
       <div
         className="flex flex-col justify-center items-center cursor-pointer"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -29,7 +29,6 @@ export default function Footer() {
         containerClass="flex space-x-5"
         iconClass="w-6 h-6 cursor-pointer"
       />
-
       <div className="text-white font-bold text-xs">@2025 Caner Tanrıverdi All Rights Reserved.</div>
     </div>
   );
