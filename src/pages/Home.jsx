@@ -41,6 +41,7 @@ export default function Home() {
           />
         </div>
       </div>
+      {/* bunu skills icinde neden kullanamiyorum ama skillitem kullanabiliyorum serkana sor */}
       <Separator />
       <Skills>
         <SkillItem />
