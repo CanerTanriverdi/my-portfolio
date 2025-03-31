@@ -7,6 +7,7 @@ import SocialLinks from "../components/SocialLinks";
 import SkillItem from "../components/SkillItem";
 import Skills from "../components/Skills";
 import Separator from "../components/Separator";
+import About from "../components/About";
 
 const homeLinks = [
   { id: "github", url: "https://github.com", icon: github },
@@ -41,7 +42,8 @@ export default function Home() {
           />
         </div>
       </div>
-      {/* bunu skills icinde neden kullanamiyorum ama skillitem kullanabiliyorum serkana sor */}
+      <Separator />
+      <About />
       <Separator />
       <Skills>
         <SkillItem />
